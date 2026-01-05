@@ -260,6 +260,16 @@ header {
         display: none;
     }
 
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    article h1,
+    article #h1_skin_seo {
+        font-size: 1.7em;
+    }
+
     #registerButton,
     #loginButton,
     #logoutButton {
@@ -294,6 +304,7 @@ header {
     color: #241f31;
     flex-grow: 1;
     text-align: center;
+    user-select: none;
 }
 
 #registerButton,
@@ -385,7 +396,6 @@ nav a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    outline: none;
 
     display: flex;
     align-items: center;
@@ -445,7 +455,6 @@ nav a:active {
 
 .icon,
 .icon_hover {
-    will-change: transform, box-shadow, background-color;
     width: 35px;
     height: 35px;
     margin-right: 0.5em;
@@ -453,6 +462,7 @@ nav a:active {
         width 0.3s ease,
         height 0.3s ease,
         margin 0.3s ease;
+    will-change: transform, box-shadow, background-color;
 }
 
 .icon_hover {
