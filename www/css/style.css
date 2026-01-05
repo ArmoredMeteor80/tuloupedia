@@ -398,13 +398,6 @@ nav ul {
 }
 
 nav a {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -418,6 +411,13 @@ nav a {
         background-color 0.3s ease,
         transform 0.3s ease;
     will-change: transform, box-shadow, background-color;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
 }
 
 nav a:hover {
