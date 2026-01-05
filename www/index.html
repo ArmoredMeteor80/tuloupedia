@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>Tuloupedia - Accueil</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="css/normalize.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="icon" href="assets/images/logo.png" type="image/x-icon" />
+        <style>
+            .container {
+                grid-template-areas:
+                    "header header"
+                    "navbar navbar"
+                    "content content"
+                    "footer footer";
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Bandeau le plus haut -->
+            <header>
+                <p id="header_title">Tuloupedia</p>
+            </header>
+
+            <!-- Bandeau de navigation -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <img
+                                src="assets/icons/home1.svg"
+                                alt="Icône Accueil"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/home2.svg"
+                                alt="Icône Accueil Survol"
+                                class="icon_hover"
+                            />
+                            <span class="nav_text">Accueil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./developpement.html">
+                            <img
+                                src="assets/icons/code1.svg"
+                                alt="Icône Développement"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/code2.svg"
+                                alt="Icône Développement Survol"
+                                class="icon_hover"
+                            />
+                            <span class="nav_text">Développement</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./recueil.html">Recueil</a>
+                    </li>
+                    <li>
+                        <a href="./galerie.html">Galerie</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <article id="main_content">
+                <h1>
+                    Là où se cultive mon jardin et fleurissent mes champs
+                    créatifs...
+                </h1>
+
+                <section class="article_section">
+                    <h2 class="section_title">Présentation du site</h2>
+                    <p>
+                        <b>Tuloupedia</b> est un projet personnel qui sert à la
+                        fois de portfolio et de carnet de bord créatif. Ici,
+                        vous trouverez une collection de mes travaux, allant du
+                        développement à l’écriture, tout en passant par le
+                        dessin. Ce site est une invitation à découvrir mon
+                        univers et mes passions.
+                    </p>
+
+                    <h3>Pourquoi ce nom ?</h3>
+                    <p>
+                        Tuloupedia est un mot-valise composé des termes suivants
+                        :
+                    </p>
+
+                    <ul>
+                        <li><b>Tuloup :</b> Mon nom de famille.</li>
+                        <li>
+                            <b>Pedia :</b> Un suffixe d’origine grecque, issu du
+                            mot
+                            <a
+                                href="https://fr.wiktionary.org/wiki/%CF%80%CE%B1%CE%B9%CE%B4%CE%B5%CE%AF%CE%B1"
+                                >παιδεία (<i>paideia</i>)</a
+                            >, qui signifie éducation ou plus largement
+                            connaissances. Ce suffixe est souvent utilisé dans
+                            des mots comme "encyclopédie" pour évoquer un
+                            recueil de connaissances, utilisé notamment par
+                            wikipédia.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Ainsi, Tuloupedia est une encyclopédie personnelle, un
+                        espace où l'on peut apprendre à me connaître, ne
+                        serait-ce qu'un peu plus 😉
+                    </p>
+                </section>
+
+                <section class="article_section">
+                    <h3>L'avenir de ce site ?</h3>
+                    <p>
+                        Ce site est en constante évolution. Au fur et à mesure
+                        que je travaille sur de nouveaux projets, j’ajouterai du
+                        contenu pour le refléter.
+                    </p>
+                </section>
+
+                <section class="article_section">
+                    <h2 id="h1_skin_seo">Qui je suis ?</h2>
+                    <p>
+                        La réponse se trouve ci-dessous, dans le bandeau de bas
+                        de page, veuillez cliquer sur
+                        <strong>À propos ⏺ Contact</strong> pour consulter mon
+                        profil ! :)
+                    </p>
+                </section>
+            </article>
+
+            <footer>
+                <a href="./about.html">
+                    À propos <span class="separateur">⏺</span> Contact</a
+                >
+
+                <img
+                    id="logo"
+                    src="assets/imgs/logo.png"
+                    alt="Logo Tuloupedia"
+                />
+            </footer>
+        </div>
+    </body>
+</html>
