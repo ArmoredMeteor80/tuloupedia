@@ -398,6 +398,13 @@ nav ul {
 }
 
 nav a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -409,15 +416,9 @@ nav a {
     transition:
         box-shadow 0.3s ease,
         background-color 0.3s ease,
-        transform 0.3s ease;
-    will-change: transform, box-shadow, background-color;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    outline: none;
+        transform 0.3s ease,
+        outline 0.2s ease;
+    will-change: box-shadow, background-color, transform, outline;
 }
 
 nav a:hover {
@@ -426,9 +427,12 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-nav a:focus,
-nav a:active {
-    outline: none;
+nav a:focus-visible {
+    outline: solid 4px rgb(202, 53, 154);
+}
+
+nav a:focus-visible:hover {
+    outline: solid 4px rgb(151, 90, 242);
 }
 
 @media (max-width: 800px) {
@@ -456,13 +460,13 @@ nav a:active {
         margin: 0;
     }
 
-    .nav_text {
+    .nav-text {
         display: none;
     }
 }
 
 .icon,
-.icon_hover {
+.icon-hover {
     width: 35px;
     height: 35px;
     margin-right: 0.5em;
@@ -470,10 +474,9 @@ nav a:active {
         width 0.3s ease,
         height 0.3s ease,
         margin 0.3s ease;
-    will-change: transform, box-shadow, background-color;
 }
 
-.icon_hover {
+.icon-hover {
     display: none;
 }
 
@@ -481,7 +484,7 @@ nav a:hover .icon {
     display: none;
 }
 
-nav a:hover .icon_hover {
+nav a:hover .icon-hover {
     display: inline;
     vertical-align: middle;
 }
