@@ -453,7 +453,7 @@ nav a:focus-visible:hover {
         flex-wrap: wrap;
     }
 
-    nav a:hover .icon_hover,
+    nav a:hover .icon-hover,
     nav a .icon {
         width: 45px;
         height: 45px;
